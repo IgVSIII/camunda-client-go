@@ -173,7 +173,7 @@ func (d *Deployment) Create(deploymentCreate ReqDeploymentCreate) (deployment *R
 				return nil, err
 			}
 		} else {
-			if fw, err = w.CreateFormFile(key, key)); err != nil {
+			if fw, err = w.CreateFormFile(key, key); err != nil {
 				return nil, err
 			}
 		}
